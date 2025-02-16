@@ -43,7 +43,7 @@ public class HotelTest {
 
         assertEquals(2, disponibles.size()); // debería haber 2 habitaciones disponibles
         assertTrue(disponibles.contains(habitacion1)); // la habitación 1 debe estar disponible
-        assertTrue(disponibles.contains(habitacion3)); // la habitación 3 debe estar disponible
+        assertTrue(disponibles.contains(habitacion3)); // La habitación 3 debe estar disponible
     }
 
 }

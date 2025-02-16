@@ -5,8 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class MapPractice {
-
 class InventoryManager {
 
     // 2.3.1. Crear un inventario basado en una lista
@@ -55,4 +53,4 @@ class InventoryManager {
         }
         return inventoryList;
     }
-}}
+}

@@ -19,18 +19,6 @@ public class Hotel {
         return new Reserva(persona, habitacion, from, to);
     }
 
-//    public Reserva reservar (Persona persona, int capacidad, double budget, LocalDateTime from, LocalDateTime to) {
-//        List<Habitacion> disponibles = find(capacidad, budget, from, to); // llama al metodo find() para buscar habitaciones disponibles
-//        if (!disponibles.isEmpty()) {
-//            Habitacion h = disponibles.get(0); // si hay habitaciones disponibles, selecciona la primera (get(0)) y crea una reserva
-//            Reserva reserva = new Reserva(persona, h, from, to);
-//            reservas.add(reserva);
-//            return reserva;
-//    }
-//        return null;
-
-
-
     // crea una lista HabitacionesDisponibles donde guardará las habitaciones que cumplen los requisitos
     public List<Habitacion> find(int capacidad, double presupuesto, LocalDateTime from, LocalDateTime to){
         List<Habitacion> HabitacionesDisponibles = new ArrayList<>();

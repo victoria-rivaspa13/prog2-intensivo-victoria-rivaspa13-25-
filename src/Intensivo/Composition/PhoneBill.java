@@ -1,37 +1,6 @@
 package Intensivo.Composition;
 
 
-class Call {
-    private String phoneReference;
-    private double cost;
-    private double seconds;
-
-    public Call(double cost, double seconds, String phoneReference) {
-        this.phoneReference = phoneReference;
-        this.seconds = seconds;
-        this.cost = cost;
-    }
-
-    public Call(String phoneReference, double seconds) {
-    }
-
-    public String getPhoneReference() {
-        return phoneReference;
-    }
-
-    public double getCost() {
-        return cost;
-    }
-
-    public double getSeconds() {
-        return seconds;
-    }
-
-    @Override
-    public String toString() {
-        return "Llamada de " + phoneReference + ": " + seconds + " segundos, costo: " + cost;
-    }
-}
 public class PhoneBill {
     private Call[] calls;
     private double balance;
