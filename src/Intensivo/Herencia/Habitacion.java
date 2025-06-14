@@ -1,7 +1,7 @@
 package Intensivo.Herencia;
 
 
-public class Habitacion {
+public abstract class Habitacion {
     protected double precio;
     protected int capacidad;
 
@@ -24,41 +24,6 @@ public class Habitacion {
         return false;
     }
 
-    @Override
-    public boolean equals(Object object) {
-        if (this == object) {
-            return true;
-        }
-        if (object == null || getClass() != object.getClass()) {
-            Habitacion that = (Habitacion) object;
-            return precio == that.precio && capacidad == that.capacidad;
-        }
-        return false;
-
-
-    }
-
-
-
-    // estandar: cuesta 200 y tiene capacidad para 4 personas
-public class Estandar extends Habitacion {
-    public Estandar() {
-        super(200, 4);
-    }
-}
-
-// suite: cuesta 300 y tiene capacidad para 2 personas
-public class Suite extends Habitacion {
-    public Suite() {
-        super(300, 2);
-    }
-}
-
-// presidencial: cuesta 600 y tiene capacidad para 2 personas
-public class Presidencial extends Habitacion {
-    public Presidencial() {
-        super(600, 2);
-    }
-}
+    public abstract String roomService();
 
 }

@@ -5,10 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class SetsPractice {
-}
-
-class DrinkChecker {
+public class DrinkChecker {
     private static final Set<String> ALCOHOLS = new HashSet<>(Arrays.asList(
             "whiskey", "whisky", "white rum", "dark rum", "bourbon", "rye", "scotch", "vodka",
             "tequila", "gin", "dry vermouth", "sweet vermouth", "prosecco", "aperol", "brandy", "mezcal",
